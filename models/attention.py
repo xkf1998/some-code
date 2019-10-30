@@ -103,5 +103,4 @@ class maxout(nn.Module):
         output = self.linear(x)
         output = output.view(-1, self.out_feature, self.pool_size)
         output = output.max(2)[0]
-
         return output
